@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Task</title>
+</head>
+
+<body>
+    <center>
+        <h1>Telangana State Road Transport Corporation</h1>
+    </center>
+    <center>
+        <h2>General Bus Pass Application</h2>
+    </center>
+    <form action="./tsrtcresponse.html" method="get">
+        <fieldset>
+            <legend><b>Applicant Details</b></legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder=" Enter name" 
+            pattern="[a-zA-Z\s\d]{10,30}" required
+                title="min length should be 10 and max length should be 20"> <br>
+
+            <label for="fathersname">Father's/Guardian's Name:</label>
+            <input type="text" name="fathersname" id="fathersname" placeholder="name" 
+            pattern="[a-zA-Z\s\d]{10,30}"
+                required
+                 title="min length should be 10 and max length should be 20"> <br>
+
+                <label for=dob>Date Of Birth:</label>
+            <input type="date" name="dob" id="Date Of Birth" required><br>
+
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label><br>
+
+            <label for="Age As On">Age As On:</label>
+            <input type="text" name="age" id="Age As On" required><br>
+
+            <label for="Aadhar No">Aadhar No:</label>
+            <input type="number" name="aadhar no" id="Aadhar No" required><br>
+
+            <label for="Mobile No">Mobile No:</label>
+            <input type="text" name="phno" id="Mobile Number" placeholder="Mobile Number" 
+            pattern="\+91[0-9]\d{9}"
+                required title="should follow indian format(+91) and length should be 10"><br>
+
+            <label for="E-mail Id">E-mail Id:</label>
+            <input type="text" name="E-mail" id="E-mail" placeholder="E-mail" 
+            pattern="[a-zA-Z._\d]+@[a-z]+\.[a-z]{2,3}" required
+                title="follow format">
+            <br>
+
+            <label for="Photo">Photo:</label>
+            <input type="file" name="file" id="Photo">
+        </fieldset>
+        <fieldset>
+            <legend><b>Residential Address Details</b></legend>
+
+            <label for="Applicant's Address">Applicant's Address:</label>
+            <textarea rows="4" cols="10" maxlength="20"></textarea>
+            <br>
+            <label for="district">District:</label>
+            <select name="district" id="district">
+                
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br>
+            <label for="mandal">Mandal:</label>
+            <select name="mandal" id="mandal">
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br>
+            <label for="village">Village:</label>
+
+            <select name="village" id="village">
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="pincode" name="pincode" id="pincode" placeholder="pincode" 
+            pattern="[0-9]{1,6}"
+            required
+            title="min length should be 1 and max length should be 6"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Pass Type Details:</b></legend>
+
+            <label for="city">City:</label>
+            <select name="city" id="City">
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+
+           <label for="pass">Pass Type:</label>
+            <select name="pass type" id="Pass Type">
+                <option value="select">----Select----</option>
+                <option value="General Pass">General Pass</option>
+                <option value="General Metro Express Route Pass MTLY">General Metro Express Route Pass MTLY</option>
+                <option value="General Ordinary Route Pass MTLY">General Ordinary Route Pass MTLY</option>
+                <option value="Ordinary pass">Ordinary pass</option>
+                <option value="Metro Express Pass">Metro Express Pass</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Mode of Payment & Pass Collection</b></legend>
+
+            <label for="Payment">Payment mode:</label>
+            <select name="payment" id="Payment">
+                <option value="Select Payment Mode">Select Payment Mode</option>
+                <option value="Payment At Counter">Payment At Counter</option>
+
+            </select><br>
+
+
+            <label for="delivery">Pass Delivery Mode:</label>
+            <select name="delivery" id="delivery">
+                <option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+                <option value="At Counter"> At Counter</option>
+
+            </select><br>
+
+            <label for="pass">Center at which
+                you want to Collect Pass:</label>
+            <select name="pass" id="pass">
+                <option value="Select">----Select----</option>
+                <option value="RTC ABIDS--HYD[30/07/2024]">RTC ABIDS--HYD[30/07/2024]</option>
+                <option value="RTC AFZALGUNJ--HYD[30/07/2024]">RTC AFZALGUNJ--HYD[30/07/2024]</option>
+                <option value="RTC AIRPORT--HYD[30/07/2024]">RTC AIRPORT--HYD[30/07/2024]</option>
+                <option value="RTC ARAMGHAR--HYD[30/07/2024]">RTC ARAMGHAR--HYD[30/07/2024]</option>
+                <option value="RTC BALA NAGAR--HYD[30/07/2024]">RTC BALA NAGAR--HYD[30/07/2024]</option>
+                <option value="RTC BORABANDA--HYD[30/07/2024]">RTC BORABANDA--HYD[30/07/2024]</option>
+                <option value="RTC CBS--HYD[30/07/2024]">RTC CBS--HYD[30/07/2024]</option>
+                <option value="RTC DILSUKHNAGAR--HYD[30/07/2024]">RTC DILSUKHNAGAR--HYD[30/07/2024]</option>
+                <option value="RTC ECIL--HYD[30/07/2024]">RTC ECIL--HYD[30/07/2024]</option>
+                <option value="RTC FAROOQNAGAR--HYD[30/07/2024]">RTC FAROOQNAGAR--HYD[30/07/2024]</option>
+                <option value="RTC GHATKESAR--HYD[30/07/2024]">RTC GHATKESAR--HYD[30/07/2024]</option>
+
+
+            </select>
+
+
+        </fieldset><br>
+
+        <center><input type="name" value="Sd5E3M" </center>
+            <center><input type="name" placeholder="Enter Captcha" </center>
+                <center><input type="submit"></center>
+
+    </form>
+
+
+</body>
+
+</html>
